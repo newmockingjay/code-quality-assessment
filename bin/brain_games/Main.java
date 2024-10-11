@@ -12,6 +12,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        String userName = Greeting.getUserName();
+
         System.out.println("Choose a game:");
         System.out.println("1. Find the Least Common Multiple (LCM)");
         System.out.println("2. Find the missing number in the geometric progression");
@@ -32,6 +34,6 @@ public class Main {
                 return;
         }
 
-        GameEngine.run(selectedGame);
+        GameEngine.run(selectedGame, userName);
     }
 }

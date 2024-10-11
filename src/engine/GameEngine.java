@@ -8,10 +8,8 @@ import java.util.Scanner;
 public class GameEngine {
     private static final int TOTAL_ROUNDS = 3;
 
-    public static void run(Game game) {
+    public static void run(Game game, String userName) {
         Scanner scanner = new Scanner(System.in);
-        String userName = Greeting.getUserName();
-
         System.out.println(game.getGameDescription());
 
         for (int round = 1; round <= TOTAL_ROUNDS; round++) {
